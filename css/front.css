@@ -1,0 +1,70 @@
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color:#1BBC9D;
+}
+.navbar-inTop{
+	background-color:rgba(0,0,0,0.20);
+	border-bottom-width: 0;
+}
+section{
+    padding-top:15px;
+    min-height:400px;
+}
+.footer-default{
+    background-color:#1BBC9D;
+    color:#FFF;
+    width:100%;height:60px;
+}
+.footer-default .container p{
+    margin-top:20px;
+}
+#home{
+    background:url(../img/bannerbg1.jpg) no-repeat center;
+    background-size:cover;
+    height:480px;
+    padding-top:100px;
+    color:#FFF;
+}
+#contact{
+    background:url(../img/bannerbg2.jpg) no-repeat center fixed;
+    background-size:cover;
+    color:#FFF;
+}
+#contact p.subtitle{
+    color:rgba(255,255,255,0.50);
+}
+h2.title{
+    font-size:2.5em;
+}
+p.subtitle{
+    font-size:1.30em;
+    color:rgba(0,0,0,0.50);
+    margin-top:-15px;
+    margin-bottom:25px;
+}
+p.desc{
+    font-size:1em;
+/*    text-align:justify;*/
+}
+#home h1, h2{
+    margin-bottom:25px;
+}
+#home h1{
+    font-weight:bold;
+    font-size:4em;
+}
+#home h2{
+    font-weight:normal;
+}
+@media (max-width:768px){
+    #home h1{
+        font-size:3em;
+    }
+    #home h2{
+        font-size:1.8em;
+    }
+}
+.btn.btn-transparent{
+    font-size:1.2em;
+    padding:15px 45px;
+    background-color:rgba(0,0,0,0.5);
+}

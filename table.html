@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Meta tag-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="author" content="PKL SmartDataIntegrasi">
+	<meta name="description" content="Bootstrap responsive admin template">
+	
+	<title>AdminPage</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+   
+    <!--Plugins-->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/chartist.min.css">
+	<link rel="stylesheet" href="css/chartist.style.css">
+</head>
+<body>
+<!-- TOP NAVBAR-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			<a href="index.html" class="navbar-brand">Admin Template</a>
+		</div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-envelope"></i><span class="mobile"> Messages</span></a>
+					<ul class="dropdown-menu">
+
+					</ul>
+				</li>			
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-globe"></i><span class="mobile"> Notification</span></a>
+					<ul class="dropdown-menu" style="min-width:250px">
+				        <li><a class="text" href="">No notifications.</a></li>
+					</ul>
+				</li>		
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-user"></i> Username <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><i class="fa fa-user"></i>	Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear"></i>	Settings</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#"><i class="fa fa-power-off"></i>	Log out</a></li>
+					</ul>
+				</li>
+                <li></li>
+			</ul>
+	    </div>
+	</div>
+</nav>
+<!-- END TOP NAVBAR -->
+<div id="wrapper">
+
+<!-- SIDEBAR-->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+       <li class="profile">
+           <img src="img/profileimg.png" alt="Profile Picture" class="profileimg"><br>
+           <i class="fa fa-fw fa-circle text-success"></i> <span class="profiletext">Username</span>
+       </li>
+        <li><a href="index.html">
+           <span class="icon"><i class="fa fa-dashboard"></i></span>
+            Dashboard
+        </a></li>
+        <li><a href="chart.html">
+           <span class="icon"><i class="fa fa-bar-chart"></i></span>
+            Charts
+        </a></li>
+        <li><a class="active" href="#">
+           <span class="icon"><i class="fa fa-table"></i></span>
+            Tables
+        </a></li>
+        <li><a href="form.html">
+           <span class="icon"><i class="fa fa-check-square"></i></span>
+            Forms
+        </a></li>
+        <li><a href="blank.html">
+           <span class="icon"><i class="fa fa-file"></i></span>
+            Blank Page
+        </a></li>
+    </ul>
+</div>
+<!-- END SIDEBAR -->
+
+<!-- PAGE -->
+<div id="page-content-wrapper">
+<a class="expand-sidebar mobile" href="#menu-toggle" id="menu-toggle"><i class="fa fa-caret-right"></i></a>
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1><i class="fa fa-table"></i> Tables</h1>
+        <hr>
+    </div>
+</div>
+<!-- tabel -->
+<div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Normal Table</h3></div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Visits</th>
+                                        <th>% New Visits</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                <!-- /.row -->
+
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> Striped Table</h3></div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Visits</th>
+                                        <th>% New Visits</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                                </div>
+                        </div>
+                        
+                </div>
+
+<!-- END tabel -->
+</div>
+<!-- END PAGE -->
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/chartist.min.js"></script>
+<script src="js/AdminPage.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $(window).resize(function(){
+        if ($(window).width() > 768) {
+            if ($("#wrapper").hasClass("toggled")){
+                $("#wrapper").removeClass("toggled");
+            }
+        }
+    });
+    
+</script>
+
+</body>
+</html>
